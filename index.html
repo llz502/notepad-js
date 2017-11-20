@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Todo App</title>
+<link rel="stylesheet" href="node_modules\normalize.css\normalize.css">
+<link rel="stylesheet" href="css\base.css">
+<link rel="stylesheet" href="node_modules\jquery-datetimepicker\bulid\jquery.datetimepicker.min.css">
+</head>
+
+<body>
+    <!--总容器开始-->
+    <div class="container">
+        <h1>我的Todo</h1>
+        <form class="add-task">
+        <!--自动聚焦,禁止浏览器自动补全功能-->
+            <input name="content"
+                   type="text" 
+                   placeholder="e.g 下午记得买菜"
+                   autofocus 
+                   autocomplete="off"  
+            >
+            <button type="submit">submit</button>
+        </form>
+        <!--清单列表开始-->
+        <div class="task-list">
+            <!--任务开始-->
+            <!--<div class="task-item">
+                <span><input type="checkbox"></span>
+                <span class="task-content">item content 1</span>
+                <span>删除</span>
+                <span>详情</span>
+            </div>-->
+            <!--任务结束-->
+           
+        </div>
+        <!--清单列表结束-->
+        <!--任务详情遮罩-->
+        <div class="task-detail-mask"></div>
+        <!--任务详情开始-->
+        <div class="task-detail">
+            
+        <!--任务详情结束    -->
+        </div>
+    </div>
+    <!--总容器结束-->
+    <script src="node_modules\jquery\dist\jquery.min.js"></script>
+    <script src="node_modules\jquery-datetimepicker\bulid\jquery.datetimepicker.full.min.js"></script>
+    <script src="node_modules\store\store.min.js"></script>
+    <script src="js/base.js"></script>
+</body>
+
+</html>
